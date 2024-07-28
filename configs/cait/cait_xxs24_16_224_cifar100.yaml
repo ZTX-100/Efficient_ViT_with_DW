@@ -1,0 +1,15 @@
+DATA:
+  DATASET: cifar100
+  IMG_SIZE: 224
+MODEL:
+  TYPE: cait_xxs
+  NAME: cait_xxs24_16_224_cifar100
+  NUM_CLASSES: 100
+  CaiT_XXS:
+    DEPTHS: 24
+TRAIN:
+  EPOCHS: 300
+  WARMUP_EPOCHS: 20
+  BASE_LR: 5e-4
+  WARMUP_LR: 5e-7
+  MIN_LR: 5e-6
