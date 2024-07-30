@@ -37,7 +37,7 @@ python -m torch.distributed.launch --nproc_per_node=[num of GPUs] --master_port 
 python -m torch.distributed.launch --nproc_per_node=[num of GPUs] --master_port 12345 main.py --cfg configs/vit/vit_tiny_16_224_tiny_imagenet.yaml --data-path [data path to Tiny-ImageNet] --batch-size [batch size]
 ```
 
-Similar implementation could be applied to other models and datasets.
+Similar implementation could be applied to other models and datasets. For more implementation, please visit [get_started.md](https://github.com/microsoft/Swin-Transformer/blob/main/get_started.md).
 
 
 
