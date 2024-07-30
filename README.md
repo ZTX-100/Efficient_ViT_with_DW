@@ -13,20 +13,31 @@ The Vision Transformer (ViT) leverages the Transformer's encoder to capture glob
 
 ### Two Variants
 <div style="color:#0000FF" align="center">
-<img src="figures/main_variants.png" width="425"/> <img src="figures/main_variant2.png" width="425"/>
+<img src="figures/main_variants.png" width="500"/>
+<img src="figures/main_variant2.png" width="500"/>
 </div>
 
 
 ## Installation
-
-
-
-## Inference
+The implementation of the original Vision Transformers comes from [Swin Transformer](https://github.com/microsoft/Swin-Transformer) and [vit-pytorch](https://github.com/lucidrains/vit-pytorch). Please refer to [get_started.md](https://github.com/microsoft/Swin-Transformer/blob/main/get_started.md) for more information about the installation.
 
 
 ## Training
+For training the models on the the datasets, for example, we could utilize the following command line to train ViT model on CIFAR10, CIFAR100, Tiny-ImageNet:
 
+```
+python -m torch.distributed.launch --nproc_per_node=[num of GPUs] --master_port 12345 main.py --cfg configs/vit/vit_tiny_16_224_cifar10.yaml --data-path [data path to CIFAR10] --batch-size [batch size]
+```
 
+```
+python -m torch.distributed.launch --nproc_per_node=[num of GPUs] --master_port 12345 main.py --cfg configs/vit/vit_tiny_16_224_cifar100.yaml --data-path [data path to CIFAR100] --batch-size [batch size]
+```
+
+```
+python -m torch.distributed.launch --nproc_per_node=[num of GPUs] --master_port 12345 main.py --cfg configs/vit/vit_tiny_16_224_tiny_imagenet.yaml --data-path [data path to Tiny-ImageNet] --batch-size [batch size]
+```
+
+Similar implementation could be applied to other models and datasets.
 
 
 
