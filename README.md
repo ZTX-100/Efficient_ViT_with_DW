@@ -1,4 +1,4 @@
-# Dynamic Label Assignment for Object Detection by Combining Predicted and Anchor IoUs
+# Depth-Wise Convolutions in Vision Transformers for Efficient Training on Small Datasets
 
 ## Introduction
 
@@ -6,7 +6,7 @@ The Vision Transformer (ViT) leverages the Transformer's encoder to capture glob
 
 ## Approach
 <div style="color:#0000FF" align="center">
-<img src="figures/main.pdf"/>
+<img src="figures/main.png"/>
 </div>
 
 
