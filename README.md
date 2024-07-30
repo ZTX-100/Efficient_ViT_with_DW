@@ -13,7 +13,7 @@ The Vision Transformer (ViT) leverages the Transformer's encoder to capture glob
 
 ### Two Variants
 <div style="color:#0000FF" align="center">
-<img src="figures/main_variants.png"/> <img src="figures/main_varaint2.png"/>
+<img src="figures/main_variants.png" width="425"/> <img src="figures/main_varaint2.png" width="425"/>
 </div>
 
 
