@@ -6,7 +6,7 @@ The Vision Transformer (ViT) leverages the Transformer's encoder to capture glob
 
 ## Approach
 <div style="color:#0000FF" align="center">
-<img src=""/>
+<img src="figures/main.pdf"/>
 </div>
 
 
