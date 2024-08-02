@@ -166,7 +166,6 @@ def main(config):
     model_without_ddp.eval()
     gflops = FlopCountAnalysis(model_without_ddp, torch.randn(1, 3, 224, 224).cuda())
     logger.info(f"number of GFLOPs: {gflops.total() / 1e9}G")
-    logger.info(f"{gflops.by_module_and_operator()}")
 
 
 def train_one_epoch(config, model, criterion, data_loader, optimizer, epoch, mixup_fn, lr_scheduler, loss_scaler):
